@@ -493,6 +493,40 @@ footer{background:#fff;color:var(--ink3);padding:26px 0;border-top:1px solid var
 .foot-li{font-weight:700;color:var(--primary);}
 .foot-li:hover{text-decoration:underline;}
 
+.cvbtn{display:inline-flex;align-items:stretch;border-radius:12px;overflow:hidden;border:2px solid var(--primary);background:#fff;font-weight:700;box-shadow:0 10px 24px -16px rgba(26,115,217,.7);}
+.cvbtn a{display:inline-flex;align-items:center;gap:9px;padding:16px 22px;color:var(--primary);transition:background .2s,color .2s;white-space:nowrap;}
+.cvbtn a svg{width:19px;height:19px;flex:0 0 auto;}
+.cvbtn a:hover{background:var(--primary);color:#fff;}
+.cvbtn .cv-dl{border-left:2px solid var(--primary);padding:16px 18px;}
+.cvbtn.sm{border-radius:100px;box-shadow:none;border-width:1.5px;}
+.cvbtn.sm a{padding:8px 14px;font-size:.9rem;}
+.cvbtn.sm .cv-dl{padding:8px 12px;border-left-width:1.5px;}
+.cvbtn.sm a svg{width:16px;height:16px;}
+.cvbtn.full{display:flex;width:100%;border-radius:100px;margin-top:12px;}
+.cvbtn.full .cv-view{flex:1;justify-content:center;padding:15px 18px;}
+.cvbtn.full .cv-dl{padding:15px 22px;}
+.nav .cvbtn{margin-left:auto;margin-right:12px;}
+.nav-links .mob-only{display:none;}
+@media(max-width:1020px){.nav .cvbtn{display:none;}.nav-links .mob-only{display:block;}}
+@media(max-width:560px){.cvbtn a{padding:14px 16px;}}
+
+.cvbtn{display:inline-flex;align-items:stretch;border-radius:12px;overflow:hidden;border:2px solid var(--primary);background:#fff;font-weight:700;box-shadow:0 10px 24px -16px rgba(26,115,217,.7);}
+.cvbtn a{display:inline-flex;align-items:center;gap:9px;padding:16px 22px;color:var(--primary);transition:background .2s,color .2s;white-space:nowrap;}
+.cvbtn a svg{width:19px;height:19px;flex:0 0 auto;}
+.cvbtn a:hover{background:var(--primary);color:#fff;}
+.cvbtn .cv-dl{border-left:2px solid var(--primary);padding:16px 18px;}
+.cvbtn.sm{border-radius:100px;box-shadow:none;border-width:1.5px;}
+.cvbtn.sm a{padding:8px 14px;font-size:.9rem;}
+.cvbtn.sm .cv-dl{padding:8px 12px;border-left-width:1.5px;}
+.cvbtn.sm a svg{width:16px;height:16px;}
+.cvbtn.full{display:flex;width:100%;border-radius:100px;margin-top:12px;}
+.cvbtn.full .cv-view{flex:1;justify-content:center;padding:15px 18px;}
+.cvbtn.full .cv-dl{padding:15px 22px;}
+.nav .cvbtn{margin-left:auto;margin-right:12px;}
+.nav-links .mob-only{display:none;}
+@media(max-width:1020px){.nav .cvbtn{display:none;}.nav-links .mob-only{display:block;}}
+@media(max-width:560px){.cvbtn a{padding:14px 16px;}}
+
 /* ---------- pages projets ---------- */
 .pj-hero{padding:132px 0 76px;background:linear-gradient(180deg,#fff 0%,var(--pale2) 100%);position:relative;overflow:hidden;}
 .pj-hero .wrap{position:relative;z-index:2;}
@@ -628,8 +662,9 @@ img{max-width:100%;}
       <a href="index.html#competences">Compétences</a>
       <a href="index.html#certifications">Certifications</a>
       <a href="index.html#formation">Formation</a>
+      <a class="mob-only" href="CV-Chancelle-AHOMAGNON.pdf" target="_blank" rel="noopener">Mon CV (PDF)</a>
     </nav>
-    <a class="btn btn-main" href="index.html#contact">Contact</a>
+    <span class="cvbtn sm"><a class="cv-view" href="CV-Chancelle-AHOMAGNON.pdf" target="_blank" rel="noopener" title="Voir le CV"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>CV</a><a class="cv-dl" href="CV-Chancelle-AHOMAGNON.pdf" download="CV-Chancelle-AHOMAGNON.pdf" aria-label="Télécharger le CV en PDF" title="Télécharger le CV (PDF)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a></span><a class="btn btn-main" href="index.html#contact">Contact</a>
   </div>
 </header>
 <main id="main">
@@ -738,7 +773,7 @@ img{max-width:100%;}
   </div>
 </section>
 </main>
-<footer><div class="wrap foot"><span>© 2026 Chancelle Gloria Houéfa AHOMAGNON</span><span>Statistique, actuariat et gestion des risques</span><a class="foot-li" href="https://www.linkedin.com/in/chancelle-gloria-h-ahomagnon-92151837a/" target="_blank" rel="noopener">LinkedIn</a></div></footer>
+<footer><div class="wrap foot"><span>© 2026 Chancelle Gloria Houéfa AHOMAGNON</span><span>Statistique, actuariat et gestion des risques</span><a class="foot-li" href="CV-Chancelle-AHOMAGNON.pdf" target="_blank" rel="noopener">CV</a><a class="foot-li" href="https://www.linkedin.com/in/chancelle-gloria-h-ahomagnon-92151837a/" target="_blank" rel="noopener">LinkedIn</a><a class="foot-li" href="https://github.com/ahomagnongloria2-art" target="_blank" rel="noopener">GitHub</a></div></footer>
 <script>
 (function(){
   var $=function(s,c){return (c||document).querySelector(s);}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));};
